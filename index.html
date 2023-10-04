@@ -8,40 +8,43 @@
 </head>
 <body>
     
-    <div class="main">
-        <div class="header">
-            <div class="logo">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 32 30">
-                    <text id="Joseph_Gabriel" data-name="Joseph
-                  Gabriel" transform="translate(1 11)" fill="#ffff" font-size="13" font-family="EdwardianScriptITC, Edwardian Script ITC"><tspan x="0" y="0">Joseph</tspan><tspan x="0" y="15">Gabriel</tspan></text>
-                  </svg>
-                  
-            </div>
-            <input type="checkbox" name="" id="side_menu">
-            <label for="side_menu" class="side_bar_left"></label>
-            <div class="menu">                   
-                <label for="side_menu" class="close_side_bar">
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                        </svg>
-                </label>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="action_btn">
-                <a href="">Download CV</a>
-                <label for="side_menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+    <div class="main" id="Home">
+        <div class="header" id="header">
+            <div class="inner_header">
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 32 30">
+                        <text id="Joseph_Gabriel" data-name="Joseph
+                      Gabriel" transform="translate(1 11)" fill="#ffff" font-size="13" font-family="EdwardianScriptITC, Edwardian Script ITC"><tspan x="0" y="0">Joseph</tspan><tspan x="0" y="15">Gabriel</tspan></text>
                       </svg>
-                </label>
-                
+                      
+                </div>
+                <input type="checkbox" name="" id="side_menu">
+                <label for="side_menu" class="side_bar_left"></label>
+                <div class="menu">                   
+                    <label for="side_menu" class="close_side_bar">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                    </label>
+                    <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#Skills">Skills</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Portfolio">Portfolio</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="action_btn">
+                    <a href="">Download CV</a>
+                    <label for="side_menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                          </svg>
+                    </label>
+                    
+                </div>
             </div>
+            
         </div>
         <div class="intro_block">
             <div class="intro_msg">
@@ -91,7 +94,7 @@
 
             </div>
         </div>
-        <div class="skills_block">
+        <div class="skills_block" id="Skills">
             <p>MY SKILLS</p>
             <div class="skill_icons_block">
                 <div class="skill_icon">
@@ -141,7 +144,7 @@
             </div>
         </div>
         <hr>
-        <div class="about_me">
+        <div class="about_me" id="About">
             <div class="flex_container">
                 <div class="img_decor_section">
                     <div class="img_1">
@@ -191,7 +194,7 @@
                 <p>Projects completed</p>
             </div>
         </div>
-        <div class="latest_work">
+        <div class="latest_work" id="Portfolio">
             <p style="color: #EF6D58; margin-bottom: 20px;">PORTFOLIO</p>
             <p style="font-size: 30px; font-weight: 700;">Latest Projects</p>
 
@@ -252,8 +255,22 @@
         </div>
 
     </div>
-    <div class="footer">
+    <div class="footer" id="Contact">
 
     </div>
+    <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+                var currentScrollPos = window.pageYOffset;
+                    if (prevScrollpos > currentScrollPos) {
+                        document.getElementById("header").style.top = "0";
+                        } 
+                    else{
+                        document.getElementById("header").style.top = "-150px";
+                        }
+                prevScrollpos = currentScrollPos;
+            }
+    
+    </script>
 </body>
 </html>

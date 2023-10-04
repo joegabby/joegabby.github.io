@@ -28,7 +28,9 @@ hr{
         background: #28293E;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 50px !important;
+    }
+    .inner_header{
+        margin: 5px 50px !important;
     }
     .action_btn a,.intro_imgs{
         display: none !important;
@@ -64,6 +66,8 @@ hr{
     }
     .close_side_bar{
         display: flex;
+        width: 35px;
+        height: 35px;
         justify-content: right;
         margin-right:20px ;
     }
@@ -124,15 +128,21 @@ hr{
     }
     .xp_lvls{
         margin: 0px 50px !important;
+        flex-direction: column;
     }
     .xp_lvls_box{
-        font-size: 20px !important;
-        padding: 10px !important;
+        width: auto !important;
     }
-    .xp_lvls_box p,.xp_lvls_box span{
+    .xp_lvls_box:first-child{
+        border-radius: 5px 5px 0px 0px !important;
+    }
+    .xp_lvls_box:last-child{
+        border-radius: 0px 0px 5px 5px !important;
+    }
+    /* .xp_lvls_box p,.xp_lvls_box span{
         font-size: 12px !important;
         font-weight: 400;
-    }
+    } */
     .latest_work>.flex_container{
         flex-direction: column-reverse !important;
     }
@@ -163,10 +173,20 @@ hr{
 }
 .header{
     display: flex;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
     background: #28293E;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 100px;
+    transition: top 0.5s ease-in-out;
+}
+.inner_header{
+    margin: 5px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 .menu{
     width: auto;
@@ -206,7 +226,7 @@ hr{
     background-color:#28293E;
     /* width: 100%; */
     height: 400px;
-    padding: 120px 100px;
+    padding: 200px 100px;
     
 }
 .intro_msg{
@@ -270,6 +290,8 @@ hr{
 }
 .decors img{
     width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 .decor_box{
     width: 200px;
