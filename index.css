@@ -19,7 +19,7 @@ hr{
     hr{
         margin: 0px 50px;
     }
-    .logo svg{
+    .logo img{
         width: 70px !important;
         height: auto;
     }
@@ -167,7 +167,7 @@ hr{
     }
 
 }
-.logo svg{
+.logo img{
     width: 80px;
     height: auto;
 }
@@ -311,6 +311,7 @@ hr{
     left: 0px;
     top: -50px;
     z-index: 100;
+    overflow: hidden;
     background-color: rgb(255, 230, 0);
 }
 .decor_box1 img{
