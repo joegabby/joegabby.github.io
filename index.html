@@ -23,11 +23,11 @@
                             </svg>
                     </label>
                     <ul>
-                        <li><a href="#Home">Home</a></li>
-                        <li><a href="#Skills">Skills</a></li>
-                        <li><a href="#About">About</a></li>
-                        <li><a href="#Portfolio">Portfolio</a></li>
-                        <li><a href="#Contact">Contact</a></li>
+                        <li><a href="#Home" class="menu_a">Home</a></li>
+                        <li><a href="#Skills" class="menu_a">Skills</a></li>
+                        <li><a href="#About" class="menu_a">About</a></li>
+                        <li><a href="#Portfolio" class="menu_a">Portfolio</a></li>
+                        <li><a href="#Contact" class="menu_a">Contact</a></li>
                     </ul>
                 </div>
                 <div class="action_btn">
@@ -267,6 +267,13 @@
             prevScrollpos = currentScrollPos;
         }
 
+        var menu_list = document.querySelectorAll(".menu_a");
+        for (let i = 0; i < menu_list.length; i++) {
+            menu_list[i].addEventListener("click", hide_menu);
+        }
+        function hide_menu(){
+            document.getElementById("side_menu").click();
+        }
         
     
     </script>

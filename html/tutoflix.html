@@ -26,7 +26,7 @@
         <div class="header" id="header">
             <div class="inner_header">
                 <div class="logo">
-                    <a href=""><img src="/images/JosephGabriel copy.png" alt=""></a>   
+                    <a href="../index.html"><img src="/images/JosephGabriel copy.png" alt=""></a>   
                 </div>
                 <input type="checkbox" name="" id="side_menu">
                 <label for="side_menu" class="side_bar_left"></label>
@@ -37,11 +37,11 @@
                             </svg>
                     </label>
                     <ul>
-                        <li><a href="#Home">Home</a></li>
-                        <li><a href="#Skills">Skills</a></li>
-                        <li><a href="#About">About</a></li>
-                        <li><a href="#Portfolio">Portfolio</a></li>
-                        <li><a href="#Contact">Contact</a></li>
+                        <li><a href="../#Home" class="menu_a">Home</a></li>
+                        <li><a href="../#Skills" class="menu_a">Skills</a></li>
+                        <li><a href="../#About" class="menu_a">About</a></li>
+                        <li><a href="../#Portfolio" class="menu_a">Portfolio</a></li>
+                        <li><a href="../#Contact" class="menu_a">Contact</a></li>
                     </ul>
                 </div>
                 <div class="action_btn">
@@ -102,6 +102,14 @@
                     document.getElementById("header").style.top = "-150px";
                     }
             prevScrollpos = currentScrollPos;
+        }
+
+        var menu_list = document.querySelectorAll(".menu_a");
+        for (let i = 0; i < menu_list.length; i++) {
+            menu_list[i].addEventListener("click", hide_menu);
+        }
+        function hide_menu(){
+            document.getElementById("side_menu").click();
         }
 
         
