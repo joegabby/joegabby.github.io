@@ -92,6 +92,24 @@ hr{
         font-size: 35px !important;
         align-items: center !important;
     }
+    .intro_msg>img{
+       display: none ;
+    }
+    .intro_msg .sub_img{
+        background-color: orangered;
+        width: 150px !important;
+        height: 150px !important;
+        position: static;
+        overflow: hidden;
+        margin: 20px 0px;
+    }
+    .intro_msg>.sub_img>img{
+        width: 100% !important;
+        height: 100% !important;
+        position: static !important;
+        object-fit: cover !important;
+        margin-top: 30px;
+    }
     .resume_blk,.intro_txt{
         text-align: center;
         width: auto !important;
@@ -139,10 +157,18 @@ hr{
     .xp_lvls_box:last-child{
         border-radius: 0px 0px 5px 5px !important;
     }
-    /* .xp_lvls_box p,.xp_lvls_box span{
-        font-size: 12px !important;
-        font-weight: 400;
-    } */
+    .workflow> .flex_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .workflow_processes h3{
+        font-size: 15px;
+   }
+   .workflow_processes span{
+       font-size: 30px;
+       margin-right: 30px !important;
+   }
     .latest_work>.flex_container{
         flex-direction: column-reverse !important;
     }
@@ -277,6 +303,9 @@ hr{
     position: absolute;
     top: 15px;
     right: 100px;
+}
+.intro_msg .sub_img{
+    display: none;
 }
 .intro_txt{
     color: #FDF0E9 !important;
@@ -479,9 +508,7 @@ hr{
     padding: 50px 100px;
 }
 .flex_container div{
-    width: 50%;
-    height: 350px;
-    
+    width: 50%; 
 }
 .flex_container div>img{
     object-fit: cover;
@@ -508,6 +535,30 @@ hr{
 }
 .sub_img>img{
     object-fit: contain !important;
+}
+.workflow .project_description{
+    margin-left: 0px;
+    width: 30%;
+}
+.workflow_processes{
+    margin-top: 50px;
+    line-height: 70px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+}
+.workflow_processes h3{
+     display: flex;
+     flex-wrap: wrap;
+     align-content: center;
+}
+.workflow_processes span{
+    font-size: 40px;
+    margin-right: 50px;
+}
+.workflow> .flex_container{
+    display: flex;
+    justify-content: space-between;
 }
 .project_description{
     line-height: 30px;
