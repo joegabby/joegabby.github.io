@@ -188,8 +188,13 @@ hr{
     .project_img_box .sub_img{
         display: none;
     }
-    .footer{
+    .contact_body{
+        height: 100% !important;
         margin: 50px !important;
+    }
+    .contact_body .xp_lvls{
+        margin: 50px !important;
+
     }
 
 }
@@ -518,6 +523,7 @@ hr{
 }
 .project_img_box{
     position: relative;
+    max-height: 300px;
 }
 .sub_img{
     position: absolute;
@@ -590,7 +596,7 @@ hr{
     color: #b2b4d1;
 }
 .xp_lvls{
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     justify-content: space-between;
     margin: 100px 100px;
@@ -621,7 +627,7 @@ hr{
 .img_1{
     bottom: 0;
     right: 0;
-    width: 400px !important;
+    width: 100%!important;
     height: 300px !important;
     z-index: 100;
 }
@@ -667,9 +673,49 @@ hr{
    
     
 }
-.footer{
+.contact_body{
     margin:100px;
     background-color: #EF6D58;
     border-radius: 10px;
     height: 300px;
+    padding: 50px 0px 50px 0px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    width: auto;
+}
+.contact_body .xp_lvls a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #391400;
+}
+.contact_body .xp_lvls a:hover{
+   text-decoration: underline;
+}
+.contact_body .xp_lvls{
+    margin: 50px;
+    background-color: transparent;
+}
+.contact_body .xp_lvls_box{
+    width: auto;
+    height: auto;
+}
+.contact_body .xp_lvls_box>div>div{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: #EF6D58;
+    margin-right: 20px;
+}
+.contact_body .xp_lvls_box>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.contact_body .xp_lvls_box svg{
+    width: 30px;
+    height: 30px;
 }
