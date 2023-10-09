@@ -19,6 +19,10 @@ hr{
     hr{
         margin: 0px 50px;
     }
+    .git_icon svg{
+        width: 20px !important;
+        height: 20px !important;
+    }
     .logo img{
         width: 60px !important;
         height: auto;
@@ -291,6 +295,16 @@ hr{
     display: flex;
     width: 100%;
     justify-content: left;
+}
+.git_icon{
+    margin: 0px !important;
+    padding: 5px !important;
+    border-radius: 100% !important;
+    width: 45px !important;
+}
+.git_icon svg{
+    width: 30px;
+    height: 30px;
 }
 .intro_msg>p{
     color: #EF6D58;
