@@ -103,6 +103,9 @@ hr{
         overflow: hidden;
         margin: 20px 0px;
     }
+    .intro_msg .sub_img{
+        display: flex !important;
+    }
     .intro_msg>.sub_img>img{
         width: 100% !important;
         height: 100% !important;
