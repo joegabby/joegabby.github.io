@@ -121,6 +121,16 @@ hr{
         text-align: center;
         width: auto !important;
     }
+    .git_icon{
+        margin: 0px !important;
+        padding: 0px !important;
+        border-radius: 100% !important;
+        border: 5px solid white;
+    }
+    .git_icon svg{
+        width: 30px !important;
+        height: 30px !important;
+    }
     .skill_icon{
         margin: 10px !important;
     }
@@ -295,12 +305,10 @@ hr{
     display: flex;
     width: 100%;
     justify-content: left;
+    align-items: center;
 }
 .git_icon{
     margin: 0px !important;
-    padding: 5px !important;
-    border-radius: 100% !important;
-    width: 45px !important;
 }
 .git_icon svg{
     width: 30px;
@@ -611,6 +619,16 @@ hr{
 .project_description p{
     font-size: 15px;
     color: #b2b4d1;
+}
+.project_description ul{
+    color: #864040;
+    line-height: 30px;
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: left;
+}
+.project_description img{
+    border: 5px solid white;
 }
 .xp_lvls{
     /* height: 100%; */
