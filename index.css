@@ -605,3 +605,9 @@ hr{
     width: 30px;
     height: 30px;
 }
+.cnt-bx{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
