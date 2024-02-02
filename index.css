@@ -383,8 +383,9 @@ hr{
 
 .skills_block img{
     width: 100px;
+    height: 100px;
+    object-fit: contain;
     margin: 0px;
-    height: auto;
 }
 .skill_icon{
     border-radius: 10px;
